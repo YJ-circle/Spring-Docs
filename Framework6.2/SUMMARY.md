@@ -1,5 +1,5 @@
 # Table of contents
 
 * [Spring Framework Overview](README.md)
-* [Core Technologies](core-technologies/README.md)
-  * [The IoC Container](core-technologies/the-ioc-container.md)
+* [핵심 기술](undefined/README.md)
+  * [The IoC Container](undefined/the-ioc-container.md)
