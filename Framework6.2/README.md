@@ -1,8 +1,8 @@
-# 스프링 프레임워크 개요
+# Spring Framework Overview
 
 스프링은 기업 환경에서 자바를 활용하는 데 필요한 모든 것을 지원합니다.   이로 인해 기업용 프로그램을 쉽게 개발할 수 있습니다. 또한, Groovy와 Kotlin 같은 JVM 대체 언어도 지원하며, 애플리케이션의 요구에 맞춰 다양한 아키텍처(구조)를 유연하게 설계할 수 있습니다.&#x20;
 
-Spring Framework 6.0부터는 Java 17 이상이 필요합니다.
+Spring Framework 6.0부터는 Java 17 이상이 필요합니다..
 
 
 
