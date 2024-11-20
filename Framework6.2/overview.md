@@ -36,6 +36,15 @@ Spring Framework는 여러 모듈로 나누어져 있고,  프로그램은 필�
 
 
 
-모듈에 대한 참고 사항:&#x20;
+## 모듈에 관한 주의 사항:
 
-Spring Framework의 JAR 파일은 자바 모듈 시스템(Java Module System)의 모듈 경로에 배포할 수 있습니다. 모듈이 활성화된 프로그램에서 사용할 수 있도록, Spring Framework의 JAR 파일에는 안정적인 언어 수준의 모듈 이름(예: spring.core, spring.context 등)을 정의하는 자동 모듈 이름(Auto-Module-Name) 정보가 포함된 매니페스트 항목이 있습니다. 이 항목은 JAR 아티팩트 이름과는 독립적으로 모듈 이름을 정의합니다. JAR 파일은 동일한 명명 규칙을 따릅니다. 예를 들어 'spring-core'와 'spring-context'처럼 점(.) 대신 하이픈(-)을 사용합니다. 물론, Spring Framework의 JAR 파일은 클래스패스에서도 정상적으로 작동합니다.
+Spring Framework의 JAR 파일은 **Java 모듈 시스템**을 지원하여 **모듈 경로**에 배포될 수 있습니다. 즉, 모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일을 사용할 수 있다는 뜻입니다.
+
+모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일은 **Automatic-Module-Name**이라는 매니페스트 항목을 포함하고 있습니다. 이 항목은 JAR 파일의 실제 이름과는 별개로 **안정적인 모듈 이름**(예: `spring.core`, `spring.context` 등)을 정의합니다.  
+> **매니페스트 항목**: JAR 파일에 포함된 메타데이터로, 해당 JAR의 속성이나 동작을 정의합니다. `Automatic-Module-Name` 항목은 Java 9부터 도입된 모듈 시스템에서 모듈 이름을 자동으로 지정해주는 기능입니다. 이 항목이 있으면, JAR 파일을 모듈 시스템에 맞게 사용할 수 있게 됩니다.
+
+이렇게 정의된 모듈 이름은 프로그램에서 각 JAR 파일을 정확히 참조할 수 있도록 합니다.
+
+JAR 파일의 이름은 점(`.`) 대신 하이픈(`-`)을 사용하여, 예를 들어 `spring-core`나 `spring-context`처럼 동일한 규칙을 따릅니다.
+
+물론, Spring Framework의 JAR 파일은 **클래스패스**에서도 정상적으로 동작합니다. 즉, 모듈 경로를 사용하지 않아도 클래스패스에서 문제 없이 작동합니다.
