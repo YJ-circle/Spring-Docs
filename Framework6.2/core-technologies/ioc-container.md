@@ -2,5 +2,6 @@
 description: 테스트
 ---
 
-# The IoC Container
+# IoC컨테이너
 
+제어의 역전
