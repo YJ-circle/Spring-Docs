@@ -42,11 +42,12 @@ Spring Framework의 JAR 파일은 **Java 모듈 시스템**을 지원하여 **�
 
 모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일은 **Automatic-Module-Name**이라는 매니페스트 항목을 포함하고 있습니다. 이 항목은 JAR 파일의 실제 이름과는 별개로 **안정적인 모듈 이름**(예: `spring.core`, `spring.context` 등)을 정의합니다.  
 
-<!--
-매니페스트 항목: JAR 파일에 포함된 메타데이터로, 해당 JAR의 속성이나 동작을 정의합니다. 
-`Automatic-Module-Name` 항목은 Java 9부터 도입된 모듈 시스템에서 모듈 이름을 자동으로 지정해주는 기능입니다. 
-이 항목이 있으면, JAR 파일을 모듈 시스템에 맞게 사용할 수 있게 됩니다.
--->
+<details>
+  <summary>매니페스트 항목 설명</summary>
+  JAR 파일에 포함된 메타데이터로, 해당 JAR의 속성이나 동작을 정의합니다. 
+  `Automatic-Module-Name` 항목은 Java 9부터 도입된 모듈 시스템에서 모듈 이름을 자동으로 지정해주는 기능입니다. 
+  이 항목이 있으면, JAR 파일을 모듈 시스템에 맞게 사용할 수 있게 됩니다.
+</details>
 
 이렇게 정의된 모듈 이름은 프로그램에서 각 JAR 파일을 정확히 참조할 수 있도록 합니다.
 
