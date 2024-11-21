@@ -53,3 +53,5 @@ Spring Framework의 JAR 파일은 **Java 모듈 시스템**을 지원하여 **�
 물론, Spring Framework의 JAR 파일은 **클래스패스**에서도 정상적으로 동작합니다.
 
 즉, 모듈 경로를 사용하지 않아도 클래스패스에서 문제 없이 작동합니다.
+
+[Next: Java 모듈 시스템](java-module-system.md)
