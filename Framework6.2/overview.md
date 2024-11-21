@@ -40,7 +40,7 @@ Spring Framework는 여러 모듈로 나누어져 있고,  프로그램은 필�
 
 Spring Framework의 JAR 파일은 **Java 모듈 시스템**을 지원하여 **모듈 경로**에 배포될 수 있습니다. 즉, 모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일을 사용할 수 있다는 뜻입니다.
 
-모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일은 [**Automatic-Module-Name**](https://github.com/spring-projects/spring-framework/blob/082a8cfae3dc7a0b8befa3f4c310cf68f4de41ab/gradle/spring-module.gradle#L52)이라는 매니페스트 항목을 포함하고 있습니다. 이 항목은 JAR 파일의 실제 이름과는 별개로 **안정적인 모듈 이름**(예: `spring.core`, `spring.context` 등)을 정의합니다.  
+모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일은 [**Automatic-Module-Name**이라는 매니페스트 항목](https://github.com/spring-projects/spring-framework/blob/082a8cfae3dc7a0b8befa3f4c310cf68f4de41ab/gradle/spring-module.gradle#L52)을 포함하고 있습니다. 이 항목은 JAR 파일의 실제 이름과는 별개로 **안정적인 모듈 이름**(예: `spring.core`, `spring.context` 등)을 정의합니다.  
 
 <details>
   <summary>매니페스트 항목 설명</summary>
