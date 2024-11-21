@@ -6,13 +6,13 @@ Spring Framework 6.0부터는 Java 17 이상이 필요합니다..
 
 
 
-스프링은 다양한 환경에서 유연하게 활용될 수 있습니다.&#x20;
+스프링은 다양한 환경에서 유연하게 활용될 수 있습니다.
 
 예를 들어, 대규모 환경에서는 프로그램이 오랫동안 운영되며, JDK와 애플리케이션 서버의 업그레이드를 개발자가 임의로 할 수 없는 상황이 있습니다. 또한 클라우드 환경에서 서버가 내장된 하나의 JAR 파일로  실행될 수도 있습니다. 배치 작업이나 시스템 통합 작업처럼 서버 없이 독립적으로 실행될 수도 있습니다.&#x20;
 
 스프링 커뮤니티에서 다양한 실제 사용 사례에 대한 피드백을 받은 덕분에 스프링은 오랜시간 동안 꾸준히 발전해왔습니다.
 
-### "스프링"의 의미
+## "스프링"의 의미
 
 "Spring"이라는 용어는 맥락에 따라 다르게 사용됩니다.
 
@@ -20,7 +20,7 @@ Spring Framework 6.0부터는 Java 17 이상이 필요합니다..
 
 시간이 지나며 Spring Framework 외에도 다양한 Spring 프로젝트들이 만들어졌고,
 
-이제는  대부분 사람들이 "Spring"이라고 할 때는 여러  Spring 프로젝트들, 모두를 의미합니다.&#x20;
+이제는  대부분 사람들이 "Spring"이라고 할 때는 여러  Spring 프로젝트들, 모두를 의미합니다.
 
 다만, 이 문서에서는 Spring Framework 자체인 기본적인 부분에 집중합니다.
 
@@ -28,9 +28,9 @@ Spring Framework 6.0부터는 Java 17 이상이 필요합니다..
 
 Spring Framework는 여러 모듈로 나누어져 있고,  프로그램은 필요한 모듈을 선택해서 사용할 수 있습니다.
 
-그 중심에는 핵심 컨테이너 모듈이 있으며, 여기에는 설정 모델과 의존성 주입 메커니즘이 포함됩니다.&#x20;
+그 중심에는 핵심 컨테이너 모듈이 있으며, 여기에는 설정 모델과 의존성 주입 메커니즘이 포함됩니다.
 
-그 외에도 Spring Framework는 메시징, 트랜잭션 데이터 및 지속성, 웹 아키텍처를 위한 기초적인 지원을 제공합니다.&#x20;
+그 외에도 Spring Framework는 메시징, 트랜잭션 데이터 및 지속성, 웹 아키텍처를 위한 기초적인 지원을 제공합니다.
 
 또한, Servlet 기반의 Spring MVC 웹 프레임워크와, 이를 병행하는 Spring WebFlux 반응형 웹 프레임워크도 포함되어 있습니다.
 
@@ -38,9 +38,11 @@ Spring Framework는 여러 모듈로 나누어져 있고,  프로그램은 필�
 
 ## 모듈에 관한 주의 사항:
 
-Spring Framework의 JAR 파일은 **Java 모듈 시스템**을 지원하여 **모듈 경로**에 배포될 수 있습니다. 즉, 모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일을 사용할 수 있다는 뜻입니다.
+Spring Framework의 JAR 파일은 **Java 모듈 시스템**을 지원하여 **모듈 경로**에 배포될 수 있습니다.
 
-모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일은 [**Automatic-Module-Name**이라는 매니페스트 항목](https://github.com/spring-projects/spring-framework/blob/082a8cfae3dc7a0b8befa3f4c310cf68f4de41ab/gradle/spring-module.gradle#L52)을 포함하고 있습니다. 이 항목은 JAR 파일의 실제 이름과는 별개로 **안정적인 모듈 이름**(예: `spring.core`, `spring.context` 등)을 정의합니다.  
+즉, 모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일을 사용할 수 있다는 뜻입니다.
+
+모듈이 활성화된 애플리케이션에서 Spring Framework의 JAR 파일은 `[**Automatic-Module-Name**이라는 매니페스트 항목](https://github.com/spring-projects/spring-framework/blob/082a8cfae3dc7a0b8befa3f4c310cf68f4de41ab/gradle/spring-module.gradle#L52)`을 포함하고 있습니다. 이 항목은 JAR 파일의 실제 이름과는 별개로 **안정적인 모듈 이름**(예: `spring.core`, `spring.context` 등)을 정의합니다.  
 
 <details>
   <summary>매니페스트 항목 설명</summary>
