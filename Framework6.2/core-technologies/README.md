@@ -14,4 +14,4 @@
 
 AOT(Ahead-Of-Time) 처리 기능은 애플리케이션을 미리 최적화하는 데 사용될 수 있습니다.
 
-이는 일반적으로 [GraalVM](https://www.graalvm.org/)을 사용하여 [네이티브 이미지 배포](packaging/graalvm-native-images/)를 위해 사용됩니다.
+이는 일반적으로 [GraalVM](https://www.graalvm.org/)을 사용하여 [네이티브 이미지 배포](/packaging/graalvm-native-images/)를 위해 사용됩니다.
