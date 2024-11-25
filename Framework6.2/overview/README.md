@@ -162,6 +162,6 @@ Spring은 끊임없이 혁신하고 발전하고 있습니다. Spring Framework 
 
 스프링 프로젝트를 만들기 위해 [start.spring.io](https://start.spring.io/)에 접속하여 기본 프로젝트를 생성하거나 ['RESTful 웹 서비스 구축 시작하기'](https://spring.io/guides/gs/rest-service)와 같은 [시작 가이드](https://spring.io/guides) 중 하나를 따라할 수 있습니다.
 
-이 가이드는 이해하기 쉬울 뿐 아니라, 매우 구체적인 작업을 중심으로 구성되어 있고, 대부분 Spring Boot를 기반으로 합니다.
+시작 가이드는 이해하기 쉬울 뿐 아니라, 매우 구체적인 작업을 중심으로 구성되어 있고, 대부분 Spring Boot를 기반으로 합니다.
  
 또한 특정 문제를 해결할 때 고려해야 할 다른 Spring 프로젝트들도 다루고 있습니다.
